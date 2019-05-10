@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="693.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dron_joistick.FXMLDocumentController">
+   <children>
+      <RadioButton fx:id="d1Radio" layoutX="71.0" layoutY="65.0" mnemonicParsing="false" onAction="#setD1" text="Dron nr1" />
+      <RadioButton fx:id="d2Radio" layoutX="71.0" layoutY="101.0" mnemonicParsing="false" onAction="#setD2" text="Dron nr2" />
+      <RadioButton fx:id="d3Radio" layoutX="72.0" layoutY="137.0" mnemonicParsing="false" onAction="#setD3" text="Dron nr3" />
+      <Button fx:id="connectButton" disable="true" layoutX="146.0" layoutY="184.0" mnemonicParsing="false" onAction="#connect" prefHeight="43.0" prefWidth="114.0" text="Connect" />
+      <Label layoutX="176.0" layoutY="33.0" text="Battery:             Position:" />
+      <Label fx:id="batteryD1" layoutX="163.0" layoutY="65.0" prefHeight="17.0" prefWidth="69.0" text="null" />
+      <Label fx:id="batteryD2" layoutX="163.0" layoutY="101.0" prefHeight="17.0" prefWidth="69.0" text="null" />
+      <Label fx:id="batteryD3" layoutX="163.0" layoutY="137.0" prefHeight="17.0" prefWidth="69.0" text="null" />
+      <Button fx:id="forwardButton" disable="true" layoutX="167.0" layoutY="299.0" mnemonicParsing="false" onAction="#goForward" prefHeight="43.0" prefWidth="60.0" text="Forward" />
+      <Button fx:id="leftButton" disable="true" layoutX="106.0" layoutY="342.0" mnemonicParsing="false" onAction="#goLeft" prefHeight="43.0" prefWidth="60.0" text="Left" />
+      <Button fx:id="rightButton" disable="true" layoutX="227.0" layoutY="342.0" mnemonicParsing="false" onAction="#goRight" prefHeight="43.0" prefWidth="60.0" text="Right" />
+      <Button fx:id="backButton" disable="true" layoutX="167.0" layoutY="385.0" mnemonicParsing="false" onAction="#goBack" prefHeight="43.0" prefWidth="60.0" text="Back" />
+      <Button fx:id="turnLeftButton" disable="true" layoutX="77.0" layoutY="257.0" mnemonicParsing="false" onAction="#turnLeft" prefHeight="43.0" prefWidth="76.0" text="Turn Left" />
+      <Button fx:id="turnRightButton" disable="true" layoutX="239.0" layoutY="257.0" mnemonicParsing="false" onAction="#turnRight" prefHeight="43.0" prefWidth="76.0" text="Turn Right" />
+      <Button fx:id="startButton" disable="true" layoutX="506.0" layoutY="257.0" mnemonicParsing="false" onAction="#start" prefHeight="43.0" prefWidth="114.0" text="Start" />
+      <Button fx:id="emergencyButton" disable="true" layoutX="506.0" layoutY="184.0" mnemonicParsing="false" onAction="#emergency" prefHeight="43.0" prefWidth="114.0" style="-fx-background-color: red;" text="Emergency land" />
+      <Button fx:id="upButton" disable="true" layoutX="385.0" layoutY="257.0" mnemonicParsing="false" onAction="#goHigher" prefHeight="43.0" prefWidth="76.0" text="Up" />
+      <Button fx:id="downButton" disable="true" layoutX="385.0" layoutY="321.0" mnemonicParsing="false" onAction="#goLower" prefHeight="43.0" prefWidth="76.0" text="Down" />
+      <Button fx:id="landButton" disable="true" layoutX="506.0" layoutY="321.0" mnemonicParsing="false" onAction="#land" prefHeight="43.0" prefWidth="114.0" text="Land" />
+      <TextArea fx:id="log" layoutX="27.0" layoutY="444.0" prefHeight="224.0" prefWidth="624.0" wrapText="true" />
+   </children>
+</AnchorPane>
